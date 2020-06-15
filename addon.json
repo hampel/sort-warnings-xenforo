@@ -1,14 +1,17 @@
 {
     "legacy_addon_id": "",
     "title": "Sort Warnings",
-    "description": "",
+    "description": "Sort warnings alphabetically",
     "version_id": 1000031,
     "version_string": "1.0.0 Beta 1",
-    "dev": "",
-    "dev_url": "",
+    "dev": "Simon Hampel",
+    "dev_url": "https://bitbucket.org/hampel/",
     "faq_url": "",
-    "support_url": "",
-    "extra_urls": [],
+    "support_url": "https://bitbucket.org/hampel/sort-warnings-xenforo/issues",
+    "extra_urls": {
+        "Git Repository": "https://bitbucket.org/hampel/sort-warnings-xenforo",
+        "Twitter": "https://twitter.com/SimonHampel"
+    },
     "require": [],
-    "icon": ""
+    "icon": "fa-sort-alpha-up"
 }
