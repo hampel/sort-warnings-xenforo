@@ -1,5 +1,6 @@
 <?php namespace Hampel\SortWarnings\XF\ControllerPlugin;
 
+use Hampel\SortWarnings\Helper\Warnings;
 use XF\Mvc\Entity\Entity;
 
 class Warn extends XFCP_Warn
@@ -12,16 +13,7 @@ class Warn extends XFCP_Warn
 		{
 			if ($warnings = $reply->getParam('warnings'))
 			{
-				$warnIds = [];
-
-				foreach ($warnings as $warning)
-				{
-					$warnIds[$warning->getEntityId()] = $warning->title->render();
-				}
-
-				natcasesort($warnIds);
-
-				$reply->setParam('warnings', $warnings->sortByList(array_keys($warnIds)));
+				$reply->setParam('warnings', Warnings::sortWarnings($warnings));
 			}
 		}
 
