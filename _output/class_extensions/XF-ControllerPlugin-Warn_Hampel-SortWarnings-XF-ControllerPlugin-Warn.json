@@ -1,0 +1,6 @@
+{
+    "from_class": "XF\\ControllerPlugin\\Warn",
+    "to_class": "Hampel\\SortWarnings\\XF\\ControllerPlugin\\Warn",
+    "execute_order": 10,
+    "active": true
+}
